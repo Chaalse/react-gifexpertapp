@@ -13,12 +13,12 @@ useEffect(() => {
 
     getGifs( categoria )
     .then( imgs => {
-        setTimeout(()=> {
+        
             setState({
                 data: imgs,
                 loading: false,
             });
-        }, 3000);        
+    
     });
 
 }, [ categoria ])

@@ -18,6 +18,7 @@ input {
 .card-grid {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -26,10 +27,13 @@ input {
   border-radius: 6px;
   margin-bottom: 10px;
   margin-right: 10px;
-  overflow: hidden;
+  overflow: auto;
 }
 .card p{
   padding: 5px;
   text-align: center;
+}
+
+.card img {
   max-height: 170px;
 }

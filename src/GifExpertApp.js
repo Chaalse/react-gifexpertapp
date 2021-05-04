@@ -2,10 +2,10 @@ import React, {useState} from 'react';
 import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
-export const GifExpertApp = () => {
+export const GifExpertApp = ({defaultCategories = ['Penguin']}) => {
 
     // const categorias =['Star Wars', 'Samurai Jack', 'Vengadores'];
-    const [categorias, setCategorias] = useState(['Star Wars']);
+    const [categorias, setCategorias] = useState(defaultCategories );
 
     // const handleAdd = () => {
     //     setCategorias( categorias => [...categorias, 'LOTR']);
@@ -13,7 +13,7 @@ export const GifExpertApp = () => {
     return (
         <>
         <h2>GifExpertApp</h2>
-        <h3 >#BeFrikiMyFriend</h3>
+        <h3 >Pucherín and friends</h3>
         <AddCategory setCategorias = { setCategorias}/>
         <hr/>
         <ol>
@@ -24,7 +24,7 @@ export const GifExpertApp = () => {
                     categoria = { categoria}
                     />
                 ))
-            }
+            };
         </ol>
 
         </>
